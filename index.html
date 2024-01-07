@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-
+  
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Bot</title>
-    <meta name="description" content="idk something about ur bot goes here">
-    <meta name="theme-color" content="#f54254">
-    <link rel="icon" type="image/png" sizes="300x250" href="assets/img/superthumb.png">
+    <title>ADGE BOT</title>
+    <meta name="description" content="Advanced Developed Generous Entertaining Bot with Multiple features, Can help to develop your discord server career!!">
+    <meta name="theme-color" content="#f1c40f">
+    <meta name="og:image" content="https://cdn.discordapp.com/attachments/1089612268746063984/1114868900413321306/20230604_162013.png">
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1089612268746063984/1114868900413321306/20230604_162013.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -16,28 +17,92 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
+	<script>
+		fetch('https://discord.com/api/v9/invites/9vcBKDYQjP')
+		.then(response => response.json())
+		.then(data => {
+			const users = data.guild.description.trim().split(" ")[0];
+			document.getElementById('users').textContent = users;
+			const servers = data.guild.description.trim().split(" ")[1];
+			document.getElementById('servers').textContent = servers;
+      /*
+			const serverTopInvite1 = data.guild.description.trim().split(" ")[2];
+			const serverTopInvite2 = data.guild.description.trim().split(" ")[3];
+			const serverTopInvite3 = data.guild.description.trim().split(" ")[4];
+      
+      const serverLink1 = `https://discord.gg/${serverTopInvite1}`;
+      const serverLink2 = `https://discord.gg/${serverTopInvite2}`;
+      const serverLink3 = `https://discord.gg/${serverTopInvite3}`;
+
+      const serverTopLinks = [ serverTopLink1, serverTopLink2, serverTopLink3 ]
+*/
+      			let serverName = data.guild.name;
+			document.getElementById('ServerName').textContent = serverName;
+/*
+			document.getElementById('serverLink1').textContent = serverTopLink1;
+			document.getElementById('serverLink2').textContent = serverTopLink2;
+			document.getElementById('serverLink3').textContent = serverTopLink3;
+
+     // for(let i = 0; i < 3; i++) {
+      const url1 = `https://discord.com/api/v9/invites/${serverTopInvite1}`;
+      fetch(url1)
+		.then(response2 => response2.json())
+    .then(data2 => {
+      
+			let serverName1 = data2.guild.name;
+			document.getElementById(`ServerName1`).textContent = serverName1;
+
+			let serverId = data2.guild.id;
+			let serverIcon = `https://cdn.discordapp.com/icons/${ServerId}/${data.guild.icon}`;
+      
+			document.getElementById(`ServerIcon1`).textContent = serverIcon;
+    })
+      */
+		})
+
+    function refreshPage() {
+  window.location.reload();
+}
+
+// Set the interval to one hour (in milliseconds)
+setInterval(refreshPage, 60 * 60 * 1000);
+    
+	</script>
+  
+
+
 <body style="background-color: var(--background);">
     <div id="top" style="height: 12px;">
         <nav class="navbar navbar-light navbar-expand fixed-top" style="color: var(--main-color);border-top-width: 6px;border-top-style: solid;background: var(--background);">
-            <div class="container-fluid"><a class="navbar-brand" href="#" style="color: var(--main-color);font-family: 'Alfa Slab One', cursive;">Bot Name</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container-fluid"><a class="navbar-brand" href="#" style="color: var(--main-color);font-family: 'Alfa Slab One', cursive;">ADGE BOT</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav">
-                        <li class="nav-item"><a class="nav-link active smoothScroll" href="#feature" style="color: var(--text-color);">Features</a></li>
-                        <li class="nav-item"><a class="nav-link smoothScroll" href="#commands" style="color: var(--text-color);">Commands</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="color: var(--text-color);">Invite</a></li>
+        
+                        <li class="nav-item"><a class="nav-link smoothScroll" href="#commands" style="color: var(--text-color);">Commands</a></li>        
+                        <li class="nav-item"><a class="nav-link smoothScroll" href="#feature" style="color: var(--text-color);">Features</a></li>
+
+
+                      <li class="nav-item"><meta charset="utf-8"><a class="nav-link active smoothScroll" href="tos.html" style="color: var(--text-color);">Terms of service</a></li>
+
+                      <li class="nav-item"><meta charset="utf-8"><a class="nav-link active smoothScroll" href="commands/tord.html" style="color: var(--text-color);">Truth or Dare web</a></li>
+
+                      
+                      
+                      
                     </ul>
             </div>
     </div>
     </nav>
     </div>
-    <header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center" style="height: 418px;text-align: center;margin: 55px;"><img class="rounded" src="https://cdn.discordapp.com/attachments/775384036285218869/776188652463456256/nUXFft6.gif" width="150" height="150" style="margin-top: 30px;">
-        <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">Bot</h1>
-        <p style="color: var(--secondary-text-color);">a bot that does random things!</p>
-        <div class="tada animated"><div role="group" class="btn-group">    <a href="https://discord.com/invite/" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;">Invite Me</a>
+    <header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center" style="height: 418px;text-align: center;margin: 55px;"><img class="rounded" src="https://media.discordapp.net/attachments/1089612268746063984/1114864541789073488/20230604_144420.gif" width="150" height="150" style="margin-top: 30px;">
+        <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">ADGE BOT</h1>
+        <p style="color: var(--secondary-text-color);">Advanced Developed Generous Entertaining Bot with Multiple features, Can help to develop your discord server career!</p>
+        <div class="tada animated"><div role="group" class="btn-group">    <a href="https://discord.com/api/oauth2/authorize?client_id=904344368561946624&permissions=10432474902519&scope=applications.commands%20bot" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--third-color);border-color: var(--third-color);border-radius: 10px;"
+        href="invite.html">Invite Me</a>
 	
-	<a class="btn btn-primary smoothScroll shadow-none" role="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;"
-        href="#feature">Features</a></div></div>
+	<<a href="https://discord.gg/9WaGV6yHz5" class="btn btn-primary shadow-none" role="button" style="margin: 5px;background-color: var(--third-color);border-color: var(--third-color);border-radius: 10px;"
+        href="#feature">Support Server</a></div></div>
     </header>
     <div id="feature" style="height: 90px;background: var(--secondary);"><div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--background)" fill-opacity="1" d="M0,96L40,112C80,128,160,160,240,144C320,128,400,64,480,48C560,32,640,64,720,69.3C800,75,880,53,960,58.7C1040,64,1120,96,1200,96C1280,96,1360,64,1400,48L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg></div></div>
     <div class="features-boxed" style="background: var(--secondary);">
@@ -47,21 +112,160 @@
             </div>
             <div class="row justify-content-center features">
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div id="features" class="box" style="/*border-radius: 34px;*/"><i class="fa fa-bolt icon" style="color: var(--main-color);"></i>
-                        <h3 class="name">Fast</h3>
-                        <p class="description" style="color: var(--secondary-text-color);">Explain how fast your bot is here! Lightning fast!<br></p>
+
+
+
+                  
+<a href="commands/fun.html">
+  <div id="features" class="box" style="/*border-radius: 34px;*/">
+    <img class="rounded" src="https://cdn.discordapp.com/emojis/947092075164352592.png" width="80" height="80" style="margin-bottom: 30px;">
+    <h3 class="name">Fun</h3>
+    <p class="description" style="color: var(--secondary-text-color);">Many Fun Commands which can entertain you!<br></p>
+  </div>
+</a>
+
+
+
+                  
+                  
+                  <div id="features" class="box" style="/*border-radius: 34px;*/"></i>
+
+<img class="rounded" src="https://cdn.discordapp.com/emojis/971036511208366090.gif" width="80" height="80" style="margin-bottom: 30px;">
+
+                      
+                        <h3 class="name">MODERATION</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">Moderation commands can help you to Moderate your servers!<br></p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div id="features" class="box"><i class="fa fa-lock icon" style="color: var(--main-color);"></i>
-                        <h3 class="name">Secure</h3>
-                        <p class="description" style="color: var(--secondary-text-color);">Explain how secure your bot is and why people should use it.<br></p>
+                  
+                
+                  
+                  <div id="features" class="box" style="/*border-radius: 34px;*/"></i>
+
+<img class="rounded" src="https://cdn.discordapp.com/emojis/971034716230787122.gif?size=80&quality=lossless" width="80" height="80" style="margin-bottom: 30px;">
+
+                      
+                        <h3 class="name">EMOJIFY</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">It emojifies your texts and makes it desinged and cool!<br></p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div id="features" class="box"><i class="fa fa-smile-o icon" style="color: var(--main-color);"></i>
-                        <h3 class="name">Happy Users</h3>
-                        <p class="description" style="color: var(--secondary-text-color);">Explain how happy everyone who uses your bot is!<br></p>
+                  
+
+ 
+                  
+                  <div id="features" class="box" style="/*border-radius: 34px;*/"></i>
+
+<img class="rounded" src="https://cdn.discordapp.com/emojis/1067001865063112767.png" width="80" height="80" style="margin-bottom: 30px;">
+
+                      
+                        <h3 class="name">IMAGEFY</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">Make unique times of image generations using Imagefy!<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                   
+                  
+                  <div id="features" class="box" style="/*border-radius: 34px;*/"></i>
+
+<img class="rounded" src="https://cdn.discordapp.com/emojis/1079546874765263029.gif" width="80" height="80" style="margin-bottom: 30px;">
+
+                      
+                        <h3 class="name">GPT</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">OpenAi GPT-3 for chatting with an AI!<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                   
+                  
+                  <div id="features" class="box" style="/*border-radius: 34px;*/"></i>
+
+<img class="rounded" src="https://cdn.discordapp.com/emojis/909839143973044254.gif" width="80" height="80" style="margin-bottom: 30px;">
+
+                      
+                        <h3 class="name">ECONOMY GAME</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">An economy game for earning some COINS<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                   
+                  
+                  <div id="features" class="box" style="/*border-radius: 34px;*/"></i>
+
+<img class="rounded" src="https://cdn.discordapp.com/emojis/1086951026810175619.png" width="80" height="80" style="margin-bottom: 30px;">
+
+                      
+                        <h3 class="name">MINI GAMES</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">Edits your message fastly + In-built funny edit commands<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                   
+                  
+                  <div id="features" class="box" style="/*border-radius: 34px;*/"></i>
+
+<img class="rounded" src="https://cdn.discordapp.com/emojis/982250232152739871.png" width="80" height="80" style="margin-bottom: 30px;">
+
+                      
+                        <h3 class="name">MINING</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">Learn, Play and beat your game competitors!<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                  
+                  
+                  <div id="features" class="box" style="/*border-radius: 34px;*/"></i>
+
+<img class="rounded" src="https://cdn.discordapp.com/emojis/969904043780624394.gif" width="80" height="80" style="margin-bottom: 30px;">
+
+                      
+                        <h3 class="name">SERVER DEVELOPER</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">It much helps you for create a developed server!<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                   
+                  
+                  <div id="features" class="box" style="/*border-radius: 34px;*/"></i>
+
+<img class="rounded" src="https://cdn.discordapp.com/emojis/1067003461977260052.png" width="80" height="80" style="margin-bottom: 30px;">
+
+                      
+                        <h3 class="name">SERVER LOGGING</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">For Rare log features available only on this bot!<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                  
+                  
+                  <div id="features" class="box" style="/*border-radius: 34px;*/"></i>
+
+<img class="rounded" src="https://cdn.discordapp.com/emojis/984515220619808870.png" width="80" height="80" style="margin-bottom: 30px;">
+
+                      
+                        <h3 class="name">UTILITY</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">Your personal Non-Quite-Nitro Bot works only for you!<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                  
+                    
+                  
+                  <div id="features" class="box" style="/*border-radius: 34px;*/"></i>
+
+<img class="rounded" src="https://cdn.discordapp.com/emojis/937634276697079818.png" width="80" height="80" style="margin-bottom: 30px;">
+
+                      
+                        <h3 class="name">INFO</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">Gives you info of server, user, additional commands, weather and much more!<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                  
+                  
+                  
+                  </p>
                     </div>
                 </div>
             </div>
@@ -74,40 +278,216 @@
             <div class="container-fluid text-white">
                 <div class="row row-cols-3 justify-content-center" style="color: var(--secondary-text-color);">
                     <div class="col-auto col-md-6 col-lg-4 text-center pb-5 pt-5 number-item love_counter">
-                        <h1 class="love_count" style="font-size: 70px;"><strong>297</strong></h1>
+                        <h1 class="love_count" style="font-size: 70px;"><strong><span id = "servers"></span></strong></h1>
                         <h4 style="color: var(--main-color);margin-top: -6px;">Total Servers</h4>
                     </div>
                     <div class="col-auto col-lg-4 text-center align-self-center pb-5 pt-5 love_counter">
-                        <h1 class="love_count" style="font-size: 70px;"><strong>98399</strong></h1>
+                        <h1 class="love_count" style="font-size: 70px;"><strong> <span id="users"></span></strong></h1>
                         <h4 style="color: var(--main-color);margin-top: -6px;">Total Users</h4>
                     </div>
                 </div>
             </div>
         </section><div class="container">
-  <h2>All Commands</h2>
+  <h2>Commands list</h2>
   <div class="accordion">
          
     <! --- If you want more just copy the following code from here -- >
           <div class="accordion-item">
-      <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Standard Commands</span><span class="icon" aria-hidden="true"></span></button>
+      <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Fun commands</span><span class="icon" aria-hidden="true"></span></button>
       <div class="accordion-content">
-        <p>!help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands <br>!help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands<br> !help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands <br>!help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands<br> !help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands <br>!help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands <br> fuck <br> hi <br> lol</p>
+        <p>
+• meme - shows a random meme <br>
+• heart - to show support, give the heart to bot <br>
+• flowergift @mention - gifts flowers to member <br>
+• hack @mention - hacks a member <br>
+• shapeshift @mention (text of shifter) <br>
+• hug @mention - hugs to a member <br>
+• pat @mention - pats to a member <br>
+• ride - gets a good ride for you <br>
+• rps - plays rock-papper- scissors <br>
+• ship (@mention) - ships with a member (or random member) <br>
+• stickbug (@mention | link) <br>
+• gender-meter (@mention | text) - Guess gender by name (or username) <br>
+• fact - shows a random fact <br>
+• wyr - shows a random wyr <br>
+• joke - shows a random joke <br>
+• advice - gives an good advice <br>
+• quiz - asks a question and gives you points if the answer is currect! <br>
+• scoreboard - scoreboard of quiz points <br>
+• games - gives you info of a ramdom game (PC/Website) <br>
+• voting - creates lobby and can vote someone <br>
+• lulcat (text) - Copycat in furry language</p>
       </div>
     </div>
     <! --- to here :D -- >
     <! --- If you want more just copy the following code from here -- >
           <div class="accordion-item">
-      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Standard Commands</span><span class="icon" aria-hidden="true"></span></button>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Moderation commands</span><span class="icon" aria-hidden="true"></span></button>
       <div class="accordion-content">
-        <p>!help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands <br>!help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands<br> !help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands <br>!help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands<br> !help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands <br>!help - see all bot comands <br> !support - see how to donate to our patreon <br> !help - see all bot comands <br> fuck <br> hi <br> lol</p>
+        <p• kick @mention | ID (reason)- kick a member<br> 
+• ban @mention | ID (reason)- ban a member<br> 
+• unban (ID) (reason)- unban a banned a member<br> 
+• mute @mention | ID (reason)- mute a member<br> 
+• unmute @mention | ID (reason)- unmute a member<br> 
+• purge (Number of messages) (max: 100) - delete messages<br> 
+• warn @mention | ID (reason)- warn a member <br> 
+• warnings @mention | ID (reason)- check warnings of a member<br> 
+• clearwarn @mention | ID (reason)- clear all warnings of a member<br> 
+• steal (mention_emoji) | ((name) (mention_emoji)) | Name (image link) | (name) (upload an image) </p>
       </div>
     </div>
     <! --- to here :D -- >
           <div class="accordion-item">
-      <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Fun Commands</span><span class="icon" aria-hidden="true"></span></button>
+      <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">  Emojify commands</span><span class="icon" aria-hidden="true"></span></button>
       <div class="accordion-content">
-        <p>!hug - hugs a user <br> !ban - bans a user
-        </p>
+        <p>• firefy - Fire Emojifies your text <br>
+• fireflex - Fireflex Emojifies your text <br>
+• blinkfy - Blinkfies your text <br>
+• lobsterfy - Lobsterfies your text <br>
+• normalfy - Normal Emojifies your text <br>
+• firefycaps(fc) - for big emoji letters <br>
+• fireflexcaps(ffc) - for big emoji letters <br>
+• blinkfycaps(bc) - for big emoji letters <br>
+• normalfycaps(nrc) - for big emoji letters <br>
+• lobsterfycaps(lc) - for big emoji letters <br>
+• emojilist - shows normal type of emoji's list <br>
+• neko - shows neko cat emojis <br>
+• pepe - shows pepe emojis list </p>
+      </div>
+    </div>
+    <! --- to here :D -- >
+          <div class="accordion-item">
+      <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">  Imagefy commands</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>• eject @mention - ejects a member from among us spaceship <br>
+• meeting <text> - call emergency meeting for given reason <br>
+• clyde <text> - Converts your text to Clyde bot image <br>
+• comment <text> - Converts your text to a YouTube comment image <br>
+• scrapbook <text> - Converts your text to scrapbook (limit: 20 letters) <br>
+• gun (@mention) (link) - Puts a gun on user avatar <br>
+• iphonex (@mention) (link) - Puts user avatar in a iphone <br>
+• bonk (@mention) (link) - Bonks a user <br>
+• fan (@mention) (link) - Rotates user avatar as a fan <br>
+• patpat (@mention) (link) - Makes a patpats of a user <br>
+• tunnel (@mention) (link) - Makes your avatar a Tunnel (5 Types available!) <br>
+• tweet <text> - Converts your text to a tweet image </p>
+      </div>
+    </div>
+    <! --- to here :D -- >
+          <div class="accordion-item">
+      <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">GPT commands</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>•  gpt (text) = Model  Davinci - it is the most capable model family and can perform any task (Latest) (DEFAULT) <br>
+• gpt1 (text) = Model Curie - quite capable for many nuanced tasks <br>
+• gpt2 (text) = Model: Babbage - can perform straightforward tasks like simple classification <br>
+• gpt3 (text) = Model: Ada - Good at Parsing text, simple classification, address correction, keywords <br>
+• setgpt (<#channel>) - set the chatbot channel </p>
+      </div>
+    </div>
+    <! --- to here :D -- >
+          <div class="accordion-item">
+      <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">  Economy game commands</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>• ework - do work (cooldown: 1 min) <br>
+• ecrime - Do crime (cooldown: 2 min) <br>
+• elucky - Do lucky draw (cooldown: 1 day) <br>
+• erob <@mention user> - Rob a member (cooldown: 3 hours) <br>
+• ebal - Shows your balance or mentioned member's balance <br>
+• edep coins value(or all) - Deposites Economy coins to bank <br>
+• ewith coins value(or all) - Withdraws Economy coins from bank <br>
+• egift @mention user coins value(or all) - Gfts Economy coins to member <br>
+• eslb - Shows server member's leaderboard <br>
+• eglb - Shows global leaderboard </p>
+      </div>
+    </div>
+    <! --- to here :D -- >
+          <div class="accordion-item">
+      <button id="accordion-button-6" aria-expanded="false"><span class="accordion-title">  Mini Games commands</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>• eject @mention - ejects a member from among us spaceship <br>
+• Voting - creates lobby and can vote someone <br>
+• hack @mention - hacks a member <br>
+• shapeshift @mention (ext of shifter)
+• rps - plays rock-papper- scissors <br>
+• ride - gets a good ride for you <br>
+• quiz - asks a question and gives you points if the answer is currect! <br>
+• scoreboard - scoreboard of quiz points <br>
+• getgame - gives you info of a ramdom game (PC/Website) </p>
+      </div>
+    </div>
+    <! --- to here :D -- >
+          <div class="accordion-item">
+      <button id="accordion-button-7" aria-expanded="false"><span class="accordion-title">  Server developer commands</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>• new-channel(nc) <br>
+• new-voice-channel(nvc) <br>
+• category-create(cc) <br>
+• role-create(rc) <br>
+• new-channel-multiple(ncm) <br>
+• new-voice-channel-multiple(nvcm) <br>
+• category-create-multiple(ccm) <br>
+• role-create-multiple(rcm)</p>
+      </div>
+    </div>
+    <! --- to here :D -- >
+          <div class="accordion-item">
+      <button id="accordion-button-10" aria-expanded="false"><span class="accordion-title">  Mining Commands</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>• emines - To join this game, spend 10k coins and get membership to play! <br>
+• mhome - Home for you and all progress info <br>
+• mstorage - Storage for mining tools/mines/bars/jeweleries <br>
+• mshop - To buy mining tools <br>
+• mtasks - Daily tasks list <br>
+• mblast - Blasts the mine with Tools and exemines Ores <br>
+• mbmake (mbarmake) - Bar making machine (called Smelter) [3x Ore = 1 Bar] <br>
+• mjmake (mjeweler) - Jeweler shop to order Jewelery [Some Bars = Jewelery] <br>
+• mreminder - Reminds you when your Bar/Jewelery is ready! <br>
+• mach (machievements) - Achievements progress <br>
+• mrank - A Rankcard with your current Rank, XP & Level <br>
+• mlb - Leaderboard of Mining EBO (based on your XP) <br>
+• mtlb - Leaderboard of Tasks done <br>
+• mmysterybox (mysterybox) - Mystery box gives rare items (12h cooldown) <br>
+• mgift - Gift Mining EBO tools/mines/bars/jeweleries to someone <br>
+• msell - Get coins by selling products <br>
+• mreminder - reminder when user's bar/jewelery is ready to be collected </p>
+      </div>
+    </div>
+    <! --- to here :D -- >
+          <div class="accordion-item">
+      <button id="accordion-button-11" aria-expanded="false"><span class="accordion-title">Information commands</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>• invite - gives invite link of bot <br>
+• dashboard - gives link of bot dashboard <br>
+• updates - shows updates/news of bot <br>
+• newcmds - shows new released commands of bot <br>
+• report - to submit a report or a problem <br>
+• feedback - to submit feedback <br>
+• users - shows members count of the server <br>
+• serverinfo - shows information of the server <br>
+• servericon - shows icon of the server <br>
+• userinfo - shows information of mentioned user <br>
+• roleinfo - shows members with mentioned role and info of role <br>
+• servercount - shows server's count where bot have been invited <br>
+• ping - gives pong <br>
+• weather - shows weather of specific location (location required)</p>
+      </div>
+    </div>
+    <! --- to here :D -- >
+          <div class="accordion-item">
+      <button id="accordion-button-12" aria-expanded="false"><span class="accordion-title">Help commands</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>• fun <br>
+• mod <br>
+• emojify <br>
+• chatbot <br>
+• economy <br>
+• economydetail <br>
+• edit <br>
+• developer <br>
+• responder <br>
+• nqn <br>
+• music <br>
+• info </p>
       </div>
     </div>
 
@@ -118,10 +498,17 @@
             <h3 class="text-center name" style="color: var(--secondary-text-color)">Top Servers Using Our Bot!</h3>
             <div class="intro"></div>
             <div class="row row-cols-4 d-flex d-xl-flex justify-content-center justify-content-xl-center people" style="padding-bottom: 0px;">
-                <div class="col-auto col-md-6 col-lg-4 yeet"><a href="https://discord.gg/" target="_blank"><img class="rounded-circle partner" src="assets/img/superthumb.png"></a></div>
-                <div class="col-auto col-md-6 col-lg-4 yeet"><a href="https://discord.gg/" target="_blank"><img class="rounded-circle partner" src="assets/img/superthumb.png"></a></div>
-                <div class="col-auto col-md-6 col-lg-4 yeet"><a href="https://discord.gg/" target="_blank"><img class="rounded-circle partner" src="assets/img/superthumb.png"></a></div>
-            </div>
+                <div class="col-auto col-md-6 col-lg-4 yeet">
+  <a href="https://discord.gg/5V6sZs2xgd" target="_blank">
+    <img class="rounded-circle partner" src="https://cdn.discordapp.com/attachments/1089612268746063984/1090642040699752508/EF.gif">
+    <h4 style="color: var(--main-color); margin-top: 4px;">ELEWARD's Hangout</h4>
+  </a>
+</div>
+
+                <div class="col-auto col-md-6 col-lg-4 yeet"><a href="https://discord.gg/hkdtkgHW7a" target="_blank"><img class="rounded-circle partner" src="https://cdn.discordapp.com/attachments/1089612268746063984/1090642548286050374/HK.png"><h4 style="color: var(--main-color);margin-top: 4px;">HK Kingdom ⛄
+</h4></a></div>
+                <div class="col-auto col-md-6 col-lg-4 yeet"><a href="https://discord.gg/w8nwybMPqa" target="_blank"><img class="rounded-circle partner" src="https://cdn.discordapp.com/attachments/1089612268746063984/1090644395172307115/Online_Friends.png"><h4 style="color: var(--main-color);margin-top: 4px;">Online friend✨</h4></a></div>
+                 </div>
         </div>
     </div>
 
@@ -131,9 +518,9 @@
             <div class="row">
                 <div class="col item social"><a class="smoothScroll" href="#top"><i class="icon ion-android-arrow-up"></i></a></div>
             </div>
-            <p class="copyright" style="color: var(--text-color);">Bot © 2021</p>
+            <p class="copyright" style="color: var(--text-color);">ADGE BOT © 2023</p>
             <p class="copyright" style="color: var(--text-color);padding: 0px;">
-                <!--Consider leaving this to give credit to me for making this, I worked hard on it and it makes me feel good :D-->Theme by&nbsp;<a href="https://itshoozi.com" style="color: var(--main-color);">itsHoozi</a></p>
+               
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
@@ -141,5 +528,4 @@
     <script src="assets/js/Counting.js"></script>
     <script src="assets/js/untitled.js"></script>
 </body>
-
 </html>
